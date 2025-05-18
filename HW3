@@ -1,0 +1,49 @@
+student.name='Fatemeh'
+student.lastName='Yakhchalian'
+student.age = 19
+student.entrance = 402
+student.id='4032175006'
+student.grades = [17,19,16]
+student(2).name='Zohreh'
+student(2).lastName='Parand'
+student(2).age=19
+student(2).entrance = 402
+student(2).id='4022175017'
+student(2).grades =[20,18,17]
+[x1,y1]=meshgrid(student(1).grades)
+[x2,y2]=meshgrid(student(2).grades)
+subplot(3,2,1)
+mesh(x1,y1)
+hold on
+subplot(3,2,2)
+mesh(x2,y2)
+strcmp(student(1).name,student(2).name)
+strcmpi(student(1).name,student(2).name)
+strncmpi(student(1).name,student(2).name,5)
+student(1).name(1:4)
+s=student(2).name(4:6)
+size(s)
+length(s)
+findstr(s,'h')
+i = input("Name: ",'s')
+double(i)
+i = input("Ascii Name: ",'s')
+char([str2num(i)])
+ch = char('Fatemeh','Yakhchalian')
+deblank(ch(1,:))
+strc1 = strcat(student(1).name,student(1).lastName)
+strc2 = strvcat(student(1).name,student(1).lastName)
+isspace(strc1)
+isspace(strc2)
+isletter(student(1).name)
+isletter(student(1).age)
+lower(strc1)
+upper(strc1)
+strrep(strc1,'Parya','Rohi')
+celol = cell(2,2)
+celol{1,1} = strc1
+celol{1,2} = strc2
+celol{2,1} = 12
+celol{2,2} = student
+i2 = input("binary: ",'s')
+bin2dec(i2)
